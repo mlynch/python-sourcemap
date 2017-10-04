@@ -113,7 +113,6 @@ class SourceMapDecoder(object):
         sources = smap['sources']
         sourceRoot = smap.get('sourceRoot')
         sourcesContent = smap.get('sourcesContent')
-        print(sourcesContent)
         names = list(map(text_type, smap['names']))
         mappings = smap['mappings']
         lines = mappings.split(';')

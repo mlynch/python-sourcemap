@@ -57,7 +57,7 @@ class SourceMapIndex(object):
         self.line_index = line_index
         self.index = index
         self.sources = sources or []
-        self.sources_content = sources_content or {}
+        self.sources_content = sources_content or []
 
     def lookup(self, line, column):
         try:
